@@ -13,12 +13,6 @@ python -m http.server 8000
 ```
 Then visit `http://localhost:8000`.
 
-## Before publishing
-Edit `index.html` and replace:
-- `christinatiotrisnasari92@gmail.com` with your professional email.
-- `christinatiot` with your LinkedIn profile slug.
-- `christinatio67` with your GitHub username.
-
 Review the About section and skills to ensure every statement reflects your actual experience. The project cards are currently project briefs / frameworks, not claims of completed analysis. Add your actual dataset, notebook, SQL files, dashboard links, and verified findings before presenting them as completed projects.
 
 ## Interactions included
