@@ -11,3 +11,26 @@ body.dark{--bg:#101a17;--ink:#edf2eb;--muted:#a7b3aa;--line:#2c3a33;--card:#1a28
 .local-link-note{display:block;flex-basis:100%;font-size:10px;color:var(--muted)}
 .project-info p{min-height:72px}
 @media(max-width:650px){.project-info p{min-height:0}.modal-links{align-items:flex-start}}
+
+/* CV-aligned education, experience, and soft-skill sections */
+.profile-section { padding-top: 96px; padding-bottom: 96px; }
+.profile-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:34px; }
+.profile-card, .timeline-item { background:var(--card, rgba(255,255,255,.04)); border:1px solid var(--line, rgba(128,128,128,.22)); border-radius:18px; padding:26px; }
+.profile-date { display:block; font-size:.72rem; letter-spacing:.12em; font-weight:700; color:var(--accent, #b58b54); margin-bottom:12px; }
+.profile-card h3, .timeline-item h3 { margin:0 0 8px; font-size:1.15rem; }
+.profile-role { font-weight:700; margin:0 0 8px; }
+.profile-card p:last-child, .timeline-item p:last-child { margin-bottom:0; }
+.soft-skills { margin-top:34px; padding:26px; border:1px solid var(--line, rgba(128,128,128,.22)); border-radius:18px; }
+.soft-skills h3, .organization-block h3 { margin:0 0 18px; }
+.soft-skill-list { display:flex; flex-wrap:wrap; gap:10px; }
+.soft-skill-list span { padding:9px 13px; border:1px solid var(--line, rgba(128,128,128,.22)); border-radius:999px; font-size:.88rem; }
+.language-note { margin:18px 0 0; }
+.timeline { margin-top:34px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.timeline-item:last-child { grid-column:1 / -1; }
+.organization-block { margin-top:38px; }
+.organization-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.organization-grid div { padding:20px; border-left:2px solid var(--accent, #b58b54); background:var(--card, rgba(255,255,255,.04)); }
+.organization-grid strong, .organization-grid span { display:block; }
+.organization-grid span { margin-top:8px; opacity:.72; font-size:.85rem; }
+@media (max-width: 720px) { .profile-grid, .timeline, .organization-grid { grid-template-columns:1fr; } .timeline-item:last-child { grid-column:auto; } .profile-section { padding-top:68px; padding-bottom:68px; } }
+.technical-more { margin-top:22px; padding:18px 20px; border-radius:14px; background:var(--card, rgba(255,255,255,.04)); line-height:1.8; font-size:.92rem; }
